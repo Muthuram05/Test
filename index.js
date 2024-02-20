@@ -1,13 +1,13 @@
 // Import packages
 const express = require("express");
 const home = require("./routes/home");
-
+const graphqlData = require('./routes/graphql')
 // Middlewares
 const app = express();
-app.use(express.json());
+// app.use(express.json());
 
 // Routes
-app.use("/home", home);
+app.use("/home", graphqlData);
 
 // connection
 const port = process.env.PORT || 9001;
