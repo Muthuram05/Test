@@ -1,6 +1,5 @@
-from flask import Flask, request, jsonify
+from flask import Flask, jsonify
 from flask_cors import CORS
-from cryptography.fernet import Fernet
 
 app = Flask(__name__)
 CORS(app)
